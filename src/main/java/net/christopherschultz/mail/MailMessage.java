@@ -1101,11 +1101,11 @@ public class MailMessage
                                   _to.toArray(new Address[_to.size()]));
 
         if(null != _cc)
-            message.setRecipients(Message.RecipientType.TO,
+            message.setRecipients(Message.RecipientType.CC,
                                   _cc.toArray(new Address[_cc.size()]));
 
         if(null != _bcc)
-            message.setRecipients(Message.RecipientType.TO,
+            message.setRecipients(Message.RecipientType.BCC,
                                   _bcc.toArray(new Address[_bcc.size()]));
 
         if(null != _subject)
