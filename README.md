@@ -9,6 +9,7 @@ Please see the API javadoc for details. It's easy to get started:
     MailMessage message = new MailMessage();
     message.setTo("Mom", "mom@example.com");
     message.setFrom("Me", "me@example.com");
+    message.setCc("Dad", "dad@example.com");
     message.setPlainText("Happy Mother's Day!");
 
     message.send(session, transport);
